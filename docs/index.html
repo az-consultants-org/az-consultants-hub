@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZ Consultants | Enterprise Architecture & DevOps Audit</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --text-bright: #ffffff;
+      --accent: #58a6ff;
+      --green: #238636;
+      --green-hover: #2ea043;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 40px 20px; line-height: 1.6; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 40px; }
+    .badge { display: inline-block; background: rgba(88,166,255,0.15); color: var(--accent); padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 12px; border: 1px solid rgba(88,166,255,0.3); }
+    h1 { color: var(--text-bright); font-size: 32px; margin-bottom: 12px; }
+    p.subtitle { color: #8b949e; font-size: 16px; max-width: 650px; margin: 0 auto; }
+    
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin: 30px 0; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 24px; position: relative; }
+    .card.highlight { border-color: var(--accent); box-shadow: 0 0 15px rgba(88,166,255,0.15); }
+    .card h3 { color: var(--text-bright); font-size: 18px; margin-bottom: 8px; }
+    .price { font-size: 26px; font-weight: 700; color: var(--text-bright); margin-bottom: 12px; }
+    .price span { font-size: 14px; color: #8b949e; font-weight: 400; }
+    .features { list-style: none; margin-bottom: 20px; }
+    .features li { padding: 6px 0; font-size: 14px; color: #8b949e; }
+    .features li::before { content: "✓"; color: #3fb950; margin-right: 8px; font-weight: bold; }
+    
+    .form-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 32px; margin-top: 30px; }
+    .form-box h2 { color: var(--text-bright); font-size: 22px; margin-bottom: 8px; }
+    .form-group { margin-bottom: 18px; }
+    label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 500; color: #8b949e; }
+    input, select, textarea { width: 100%; padding: 10px 14px; background: #0d1117; border: 1px solid var(--border); border-radius: 6px; color: var(--text-bright); font-size: 14px; }
+    input:focus, select:focus, textarea:focus { border-color: var(--accent); outline: none; }
+    button.submit-btn { width: 100%; padding: 12px; background: var(--green); color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer; transition: 0.2s; }
+    button.submit-btn:hover { background: var(--green-hover); }
+    footer { text-align: center; margin-top: 40px; color: #8b949e; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="badge">AZ CONSULTANTS ENTERPRISE INTAKE</div>
+    <h1>Cloud Infrastructure & Architecture Audit</h1>
+    <p class="subtitle">Cut AWS/GCP bills by up to 35%, remediate microsecond latency bottlenecks, and harden Kubernetes deployments.</p>
+  </header>
+
+  <div class="grid">
+    <div class="card highlight">
+      <div style="color: #58a6ff; font-size: 12px; font-weight: bold; text-transform: uppercase;">Promotional Offer</div>
+      <h3>Free 45-Min Architecture Audit</h3>
+      <div class="price">$0 <span>/ 10 spots open this month</span></div>
+      <ul class="features">
+        <li>Deep-dive architectural review (Zoom/Meet)</li>
+        <li>Cloud cost leakage identification</li>
+        <li>Actionable diagnostic executive report</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Comprehensive Cloud Audit</h3>
+      <div class="price">$2,500 <span>one-time fee</span></div>
+      <ul class="features">
+        <li>Full cluster & CI/CD pipeline profiling</li>
+        <li>Guaranteed 25%+ compute cost reduction plan</li>
+        <li>P99 latency & concurrency stress report</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Monthly Platform Retainer</h3>
+      <div class="price">$4,900 <span>/ month</span></div>
+      <ul class="features">
+        <li>Dedicated Lead DevOps Architect</li>
+        <li>Custom internal developer tooling builds</li>
+        <li>2-hour critical infrastructure SLA</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <h2>Book Your Architecture Audit</h2>
+    <p style="color: #8b949e; font-size: 14px; margin-bottom: 20px;">Fill out your team specs to schedule the session with our Lead Architect.</p>
+    
+    <form id="auditForm" onsubmit="event.preventDefault(); alert('Request submitted! Our Lead DevOps Architect will reach out to you within 2 hours.');">
+      <div class="form-group">
+        <label>Your Name & Title</label>
+        <input type="text" placeholder="e.g. Alex Miller, VP of Engineering" required>
+      </div>
+      <div class="form-group">
+        <label>Company / Organization</label>
+        <input type="text" placeholder="e.g. Stripe, Fintech scale-up" required>
+      </div>
+      <div class="form-group">
+        <label>Work Email</label>
+        <input type="email" placeholder="alex@company.com" required>
+      </div>
+      <div class="form-group">
+        <label>Primary Cloud Provider</label>
+        <select>
+          <option>Amazon Web Services (AWS)</option>
+          <option>Google Cloud Platform (GCP)</option>
+          <option>Microsoft Azure</option>
+          <option>Multi-Cloud / Hybrid</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Primary Bottleneck or Goal</label>
+        <textarea rows="3" placeholder="e.g. Slashing Kubernetes costs, P99 latency spikes under 10k RPS, CI/CD pipeline velocity..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Claim Free 45-Min Audit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2026 AZ Consultants Enterprise Hub • High-Performance Cloud & Systems Engineering</p>
+  </footer>
+</div>
+
+</body>
+</html>
