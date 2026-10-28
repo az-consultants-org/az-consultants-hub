@@ -1,0 +1,37 @@
+{
+  "project": "AZ Consultants Enterprise Hub",
+  "enterprise_url": "https://github.com/enterprises/az-consultants",
+  "schedule_interval_days": 2,
+  "monetization_goal": "Paid Enterprise Architecture Audits ($2,500) & Monthly Retainers ($4,900)",
+  "releases": [
+    {
+      "day": 1,
+      "repo_name": "turbobatch-pro",
+      "path": "/home/aamir/.gemini/antigravity/scratch/turbobatch-pro",
+      "status": "READY_AND_COMMITTED",
+      "focus": "Adaptive concurrency token-bucket engine",
+      "metrics": "64ms P99 vs 1820ms naive Promise.all, 22MB RAM footprint"
+    },
+    {
+      "day": 3,
+      "repo_name": "k8s-autotune",
+      "path": "/home/aamir/.gemini/antigravity/scratch/k8s-autotune",
+      "status": "SCHEDULED",
+      "focus": "Dynamic pod CPU/Memory resource optimizer & cloud cost reducer"
+    },
+    {
+      "day": 5,
+      "repo_name": "secret-shield-action",
+      "path": "/home/aamir/.gemini/antigravity/scratch/secret-shield-action",
+      "status": "SCHEDULED",
+      "focus": "Zero-latency commit credential scanning & SOC2 policy compliance engine"
+    },
+    {
+      "day": 7,
+      "repo_name": "api-gateway-mesh",
+      "path": "/home/aamir/.gemini/antigravity/scratch/api-gateway-mesh",
+      "status": "SCHEDULED",
+      "focus": "Envoy/WASM edge router with dynamic circuit breaking"
+    }
+  ]
+}
