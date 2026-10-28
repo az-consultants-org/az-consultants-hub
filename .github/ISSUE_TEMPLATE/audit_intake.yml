@@ -1,0 +1,42 @@
+name: "🚀 Claim 45-Min Enterprise Architecture Audit"
+description: "Book an architecture review with our Lead DevOps Architect to slash cloud bills & optimize latency"
+title: "[AUDIT INTAKE]: "
+labels: ["audit-request", "enterprise-lead"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Welcome to the AZ Consultants Architecture Audit Intake!
+        Please fill out your infrastructure details below. Our Lead Architect will review and reply within 2 business hours.
+  - type: input
+    id: contact
+    attributes:
+      label: "Full Name & Work Email"
+      placeholder: "e.g. Alex Miller (alex@company.com)"
+    validations:
+      required: true
+  - type: input
+    id: company
+    attributes:
+      label: "Company / Organization Name"
+      placeholder: "e.g. Acme Scale-up (25 Engineers)"
+    validations:
+      required: true
+  - type: dropdown
+    id: cloud
+    attributes:
+      label: "Primary Cloud Infrastructure"
+      options:
+        - "Amazon Web Services (AWS)"
+        - "Google Cloud Platform (GCP)"
+        - "Microsoft Azure"
+        - "Multi-Cloud / Hybrid Bare-Metal"
+    validations:
+      required: true
+  - type: textarea
+    id: bottleneck
+    attributes:
+      label: "Primary Infrastructure Bottleneck / Goal"
+      placeholder: "e.g. Slashing Kubernetes cloud bill by 30%, P99 latency spikes under 10k RPS, CI/CD pipeline acceleration..."
+    validations:
+      required: true
